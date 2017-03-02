@@ -4,4 +4,13 @@ img {
 body { 
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-11.jpg);
+    background-repeat: no-repeat;
+    
+}
+p{
+    background-color: yellow;
+}
+h1{
+    background-color: yellow;
 }

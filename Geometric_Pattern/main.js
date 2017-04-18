@@ -14,8 +14,8 @@ CR = CD/2;
 
 function draw() {
     var isShifted = false;
-  var y = 0;
-  while( y<= height){
+  var y = height;
+  while( y >= 0){
   
  var x= 0;
  if(isShifted){
@@ -28,7 +28,7 @@ function draw() {
       ellipse(x,y,CD,CD);
       x = x + CD;
   }
-  y = y+CR;
+  y = y-CR;
   isShifted = !isShifted
       
   }

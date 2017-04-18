@@ -16,9 +16,9 @@ CR = CD/2;
 
 
 function draw() {
-    rVal = 255;
-    gVal = 50;
-    bVal = 90;
+    rVal = 0;
+    gVal = 0;
+    bVal = 255;
     
     var isShifted = false;
   var y = height;
@@ -33,7 +33,7 @@ function draw() {
  
   while (x <= width) {
       
-      fill(color(rVal,bVal,gVal));
+      fill(color(rVal,gVal,bVal));
       stroke(color(bVal,gVal,rVal));
       
      
@@ -43,11 +43,11 @@ function draw() {
   }
   y = y-CR;
   isShifted = !isShifted;
-      
-      rVal = rVal-2;
-      bVal = bVal+3;
+    
+    
+      rVal = rVal+3;
+      bVal = bVal-2;
       gVal = gVal+7;
-  
   }
  
   
